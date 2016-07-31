@@ -1,0 +1,21 @@
+[package]
+name = "imdialog"
+version = "0.1.0"
+authors = ["Patrick Walton <pcwalton@mimiga.net>"]
+
+[dependencies]
+clap = "2.10"
+libc = "0.2"
+gl = "0.5"
+num = "0.1"
+sdl2 = "0.22"
+xdg = "2.0.0"
+
+[dependencies.imgui-sys]
+version = "0.0"
+default-features = false
+features = []
+
+[target.'cfg(target_os="linux")'.dependencies]
+ioctl-rs = "0.1"
+
